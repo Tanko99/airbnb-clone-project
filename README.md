@@ -234,7 +234,7 @@ A CI/CD pipeline is an automated process that helps developers integrate code ch
 
 ---
 
-## 🛠️ Common Tools for CI/CD
+##  Common Tools for CI/CD
 
 | **Tool**          | **Purpose**                                                                   |
 |-------------------|--------------------------------------------------------------------------------|
