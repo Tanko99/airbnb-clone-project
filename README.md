@@ -23,8 +23,8 @@ The airbnb clone project is a simplified airbnb patform designed for a robust an
 
 ### Backend:
 - **Django**
--  **Python**, **JavaSceipt**, **MySQL***.
--  **Docker** CI/CD Pipelines**
+-  **Python**, **JavaSceipt**, **MySQL**.
+-  **Docker**, **CI/CD Pipelines**
 
 ---
 
@@ -36,9 +36,26 @@ The airbnb clone project is a simplified airbnb patform designed for a robust an
 |Backend Developer|Implements the core of an application-its algorithms and business logic|Responsible for implementing API endpoints, database schemas, and business logic.
 |Frontend Developer|create the part of an application that users interact with, ensuring that an app offers an equally smooth experience to all|Responsible for the client side
 |DevOps Engineer|Builds continuous integration and continuous delivery (CI/CD) pipelines for faster delivery|Handles deployment, monitoring, and scaling of the backend services.
-|QUality Assurance Engineer|Makes sure an application performs according to requirements and spots functional/non-functional defects|Ensures the best quality standards for the app
+|Quality Assurance Engineer|Makes sure an application performs according to requirements and spots functional/non-functional defects|Ensures the best quality standards for the app
 |Dtabase Administrator|Mnages the Database|Manages the database design. Indexing and optimisation
 
+---
+
+## Technology Stack 
+|stack                      |Role in the project
+|---------------------------|-------------------------------------------------------------------------------------------
+|Django| A high-level Python web framework used for building the RESTful API.
+|Django REST Framework| Provides tools for creating and managing RESTful APIs.
+|PostgreSQL| A powerful relational database used for data storage.
+|GraphQL| Allows for flexible and efficient querying of data.
+|Celery| For handling asynchronous tasks such as sending notifications or processing payments.
+|Redis| Used for caching and session management.
+|Docker| Containerization tool for consistent development and deployment environments.
+|CI/CD Pipelines| Automated pipelines for testing and deploying code changes.
+|HTML5|An advanced HTML that will be  Used for building the structure of web pages with semantic markup.
+|Tailwind CSS|Will be used for styling user interface components quickly using uti;ity-first classes
+|React|Used to create interactuve and reusable user intefface componenets
+|Next.JS|Used as the react framework for routing, Server Side Rendering(SSR) and perform.
 
 
 
