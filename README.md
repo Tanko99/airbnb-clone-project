@@ -145,6 +145,49 @@ Represents a payment transaction for a booking.
 - A booking has **one payment** (one-to-one).
 
 ---
+## Features Breakdown
+This project includes the following features;
+## 1. User Management
+Handles user registration, login/logout, profile editing, and role-based access (e.g., guests vs. hosts).
+Ensures secure access and personalized experiences for users. It allows hosts to list properties and guests to make bookings, forming the backbone of user interaction within the system.
+
+---
+
+## 2. Property Management
+Enables hosts to create, update, and delete property listings. This includes adding descriptions, prices, photos, availability, and location data.
+Provides a platform for hosts to showcase their accommodations and manage listings efficiently, making properties discoverable for potential guests.
+
+---
+
+## 3. Booking System
+Manages reservation processes including date selection, availability checks, booking confirmations, and cancellations.
+Facilitates the core transaction between guests and hosts by allowing seamless scheduling and reservation of properties, ensuring proper handling of availability and conflicts.
+
+---
+
+## 4. Data Optimization
+
+Includes database indexing, caching, and query optimization to improve the performance and scalability of the application. 
+Enhances the responsiveness and efficiency of the platform, particularly under high user traffic, ensuring a smooth and scalable user experience.
+
+---
+
+## 5. Reviews 
+Allows guests to rate and review properties and hosts, and optionally allows hosts to review guests.  
+Builds trust and community credibility by providing transparent feedback, helping users make informed decisions and encouraging quality service.
+
+---
+
+## 6. Payment Processing
+Handles secure transactions between guests and hosts, including integration with third-party payment gateways (e.g., Stripe, PayPal).
+Enables the monetization aspect of the platform, supporting safe and reliable financial interactions that are essential for the functioning of a real-world marketplace.
+
+---
+
+
+
+
+
 
 
 
