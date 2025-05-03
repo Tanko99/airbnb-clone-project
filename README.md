@@ -44,20 +44,107 @@ The airbnb clone project is a simplified airbnb patform designed for a robust an
 ## Technology Stack 
 |stack                      |Role in the project
 |---------------------------|-------------------------------------------------------------------------------------------
-|Django| A high-level Python web framework used for building the RESTful API.
-|Django REST Framework| Provides tools for creating and managing RESTful APIs.
-|PostgreSQL| A powerful relational database used for data storage.
-|GraphQL| Allows for flexible and efficient querying of data.
-|Celery| For handling asynchronous tasks such as sending notifications or processing payments.
-|Redis| Used for caching and session management.
-|Docker| Containerization tool for consistent development and deployment environments.
-|CI/CD Pipelines| Automated pipelines for testing and deploying code changes.
-|HTML5|An advanced HTML that will be  Used for building the structure of web pages with semantic markup.
-|Tailwind CSS|Will be used for styling user interface components quickly using uti;ity-first classes
-|React|Used to create interactuve and reusable user intefface componenets
-|Next.JS|Used as the react framework for routing, Server Side Rendering(SSR) and perform.
+|Django|   A high-level Python web framework used for building the RESTful API.
+|Django REST Framework|    Provides tools for creating and managing RESTful APIs.
+|PostgreSQL|    A powerful relational database used for data storage.
+|GraphQL|       Allows for flexible and efficient querying of data.
+|Celery|        For handling asynchronous tasks such as sending notifications or processing payments.
+|Redis|          Used for caching and session management.
+|Docker|           Containerization tool for consistent development and deployment environments.
+|CI/CD Pipelines|     Automated pipelines for testing and deploying code changes.
+|HTML5|            An advanced HTML that will be  Used for building the structure of web pages with semantic markup.
+|Tailwind CSS|       Will be used for styling user interface components quickly using uti;ity-first classes
+|React|            Used to create interactuve and reusable user intefface componenets
+|Next.JS|       Used as the react framework for routing, Server Side Rendering(SSR) and perform.--
 
+---
+## Dtabase Design
 
+## 1. **User**
+ This represents someone who can host or book properties.
+
+### Key Fields:
+- `id` (Primary Key)
+- `name`
+- `email` (Unique)
+- `passwordHash`
+- `role` (e.g., guest, host)
+
+### Relationships:
+- A user can create **multiple properties** (if they are a host).
+- A user can make **multiple bookings**.
+- A user can leave **multiple reviews**.
+
+---
+
+## 2. **Property**
+Represents a listing available for booking.
+
+### Key Fields:
+- `id` (Primary Key)
+- `title`
+- `description`
+- `location`
+- `pricePerNight`
+- `hostId` (Foreign Key → User)
+
+### Relationships:
+- A property is **owned by one user** (host).
+- A property can have **many bookings**.
+- A property can have **many reviews**.
+
+---
+
+## 3. **Booking**
+Represents a reservation made by a user for a property.
+
+### Key Fields:
+- `id` (Primary Key)
+- `userId` (Foreign Key → User)
+- `propertyId` (Foreign Key → Property)
+- `startDate`
+- `endDate`
+- `totalPrice`
+
+### Relationships:
+- A booking is made by **one user**.
+- A booking is for **one property**.
+- A booking can have **one payment**.
+
+---
+
+## 4. **Review**
+Represents feedback given by a user for a property.
+
+### Key Fields:
+- `id` (Primary Key)
+- `userId` (Foreign Key → User)
+- `propertyId` (Foreign Key → Property)
+- `rating` (e.g., 1–5)
+- `comment`
+
+### Relationships:
+- A review is written by **one user**.
+- A review is for **one property**.
+- A user can leave **one review per property per booking** (enforce this via logic/constraints).
+
+---
+
+## 5. **Payment**
+Represents a payment transaction for a booking.
+
+### Key Fields:
+- `id` (Primary Key)
+- `bookingId` (Foreign Key → Booking)
+- `amount`
+- `status` (e.g., paid, pending, failed)
+- `paymentMethod` (e.g., card, PayPal)
+
+### Relationships:
+- A payment is linked to **one booking**.
+- A booking has **one payment** (one-to-one).
+
+---
 
 
 
