@@ -214,6 +214,40 @@ Enables the monetization aspect of the platform, supporting safe and reliable fi
 
 ---
 
+## CI/CD Pipeline
+---
+## What is CI/CD pipeline
+**CI/CD** stands for **Continuous Integration** and **Continuous Deployment/Delivery**.  
+A CI/CD pipeline is an automated process that helps developers integrate code changes frequently, test them automatically, and deploy updates to production reliably and efficiently.
+
+---
+
+###  Why CI/CD Is Important for This Project
+
+| **Benefit**                     | **Explanation**                                                                 |
+|----------------------------------|---------------------------------------------------------------------------------|
+| **Faster Development**          | Automates testing and deployment so changes go live quicker.                   |
+| **Early Bug Detection**         | Runs tests automatically to catch issues before they reach production.         |
+| **Improved Code Quality**       | Encourages frequent commits and peer review through automated build processes. |
+| **Reliable Deployments**        | Reduces human error during deployments with repeatable, consistent steps.      |
+| **Team Collaboration**          | Ensures a shared workflow where everyone works from the latest tested version. |
+
+---
+
+## 🛠️ Common Tools for CI/CD
+
+| **Tool**          | **Purpose**                                                                   |
+|-------------------|--------------------------------------------------------------------------------|
+| **GitHub Actions**| Automates CI/CD workflows directly from GitHub (build, test, deploy).         |
+| **Docker**        | Packages the app in containers for consistent development and deployment.      |
+| **Jenkins**       | A customizable automation server used to build and deploy applications.        |
+| **Travis CI**     | CI tool that automatically builds and tests code changes hosted on GitHub.    |
+| **CircleCI**      | Cloud-based CI/CD tool optimized for fast and parallel testing.                |
+| **Kubernetes**    | Orchestrates containerized application deployment and scaling (with Docker).   |
+| **Heroku / AWS / Vercel** | Hosting platforms for automated deployments.                          |
+
+---
+
 
 
 
