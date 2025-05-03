@@ -145,7 +145,7 @@ Represents a payment transaction for a booking.
 - A booking has **one payment** (one-to-one).
 
 ---
-## Features Breakdown
+## Feature Breakdown
 This project includes the following features;
 ## 1. User Management
 Handles user registration, login/logout, profile editing, and role-based access (e.g., guests vs. hosts).
