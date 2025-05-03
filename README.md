@@ -32,13 +32,11 @@ The airbnb clone project is a simplified airbnb patform designed for a robust an
 |Role                    |Function                                                       |Responsability in the project                                                          
 |------------------------|---------------------------------------------------------------|----------------------------------------------------------------------------------------|
 |Product Manager |Makes sure a product or its part is delivered on time and within budget and also motivates the software development team|Will over that product is produced on time
-|UI/UX Designer|Transforms a product vision into user-friendly designs|Will ensure the user interface is functioning well and intuitive to satisfy user needs and with a good user 
-               |and also Creates user journeys for the best user experience| experience
+|UI/UX Designer|Transforms a product vision into user-friendly designs|Will ensure the user interface is functioning well and intuitive to satisfy user needs and their experiences
 |Backend Developer|Implements the core of an application-its algorithms and business logic|Responsible for implementing API endpoints, database schemas, and business logic.
 |Frontend Developer|create the part of an application that users interact with, ensuring that an app offers an equally smooth experience to all|Responsible for the client side
 |DevOps Engineer|Builds continuous integration and continuous delivery (CI/CD) pipelines for faster delivery|Handles deployment, monitoring, and scaling of the backend services.
-|QUality Assurance Engineer|Makes sure an application performs according to requirements and spots functional/non-functional defects|Ensures that  are all the functionalities are w
-                                                                                                                                    |working well and meets quality standards
+|QUality Assurance Engineer|Makes sure an application performs according to requirements and spots functional/non-functional defects|Ensures the best quality standards for the app
 |Dtabase Administrator|Mnages the Database|Manages the database design. Indexing and optimisation
 
 
