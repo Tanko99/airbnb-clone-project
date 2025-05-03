@@ -211,7 +211,8 @@ Enables the monetization aspect of the platform, supporting safe and reliable fi
 | **Payments**             | Encrypting payment details and securing transactions.             | Prevents financial fraud and ensures compliance with standards like PCI-DSS.      |
 | **Reviews**              | Preventing spam or fake review submissions.                       | Preserves authenticity and community trust.                                       |
 | **Admin Access**         | Restricting access to sensitive controls and configurations.      | Prevents system-wide manipulation or data exposure.                               |
-Let me know if yo
+
+---
 
 
 
