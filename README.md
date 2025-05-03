@@ -58,7 +58,7 @@ The airbnb clone project is a simplified airbnb patform designed for a robust an
 |Next.JS|       Used as the react framework for routing, Server Side Rendering(SSR) and perform.--
 
 ---
-## Dtabase Design
+## Database Design
 
 ## 1. **User**
  This represents someone who can host or book properties.
@@ -138,7 +138,7 @@ Represents a payment transaction for a booking.
 - `bookingId` (Foreign Key → Booking)
 - `amount`
 - `status` (e.g., paid, pending, failed)
-- `paymentMethod` (e.g., card, PayPal)
+- `paymentMethod` (e.g., card, PayPal, MTN momo, Orange money or any other payment method)
 
 ### Relationships:
 - A payment is linked to **one booking**.
