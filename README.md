@@ -185,7 +185,33 @@ Enables the monetization aspect of the platform, supporting safe and reliable fi
 ---
 
 
+## API Security
+---
+##  Key Security Measures
 
+| **Security Measure**     | **Description**                                                                                     | **Purpose**                                                                 |
+|--------------------------|-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
+| **Authentication**       | Verifies user identity using tokens (e.g., JWT, OAuth2).                                           | Ensures only valid users access protected resources.                        |
+| **Authorization**        | Restricts user actions based on roles (guest, host, admin).                                        | Prevents unauthorized access to resources and operations.                   |
+| **Rate Limiting**        | Limits the number of requests per IP/user to prevent abuse.                                        | Mitigates brute-force attacks and protects server performance.              |
+| **Input Validation**     | Validates and sanitizes incoming API data.                                                         | Prevents injection attacks such as SQLi and XSS.                            |
+| **HTTPS (SSL/TLS)**      | Enforces secure communication between client and server.                                           | Encrypts data in transit, protecting credentials and payment data.          |
+| **API Key Management**   | Secures and rotates keys used for external services (e.g., Stripe, maps).                          | Protects integration points and sensitive third-party credentials.          |
+| **Error Handling**       | Avoids exposing internal server errors or debug information in responses.                         | Prevents attackers from gathering information about system internals.       |
+
+---
+
+##  Importance of Security by Project Area
+
+| **Project Area**         | **Security Concern**                                               | **Why It Matters**                                                                 |
+|--------------------------|--------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| **User Data**            | Protecting personal info (e.g., emails, passwords, identity data).| Prevents identity theft, account hijacking, and data breaches.                    |
+| **Property Listings**    | Preventing unauthorized edits or deletions of listings.           | Maintains data integrity and protects hosts' content.                             |
+| **Bookings**             | Securing reservation and availability data.                       | Ensures trust in the reservation system and avoids double bookings or fraud.      |
+| **Payments**             | Encrypting payment details and securing transactions.             | Prevents financial fraud and ensures compliance with standards like PCI-DSS.      |
+| **Reviews**              | Preventing spam or fake review submissions.                       | Preserves authenticity and community trust.                                       |
+| **Admin Access**         | Restricting access to sensitive controls and configurations.      | Prevents system-wide manipulation or data exposure.                               |
+Let me know if yo
 
 
 
