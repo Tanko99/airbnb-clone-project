@@ -423,7 +423,7 @@ In UI/UX design—especially when using tools like **Figma**—clearly defining 
 
 ---
 
-## Project Roles and Responsabilities
+## Project Roles and Responsibilities
 
 ## Project Manager (PM) 🗂️
 ## Overview: The Project Manager is the leader of the project. They are responsible for planning, executing, and closing projects.
