@@ -364,7 +364,7 @@ The primary goal is to create a seamless, intuitive, and visually engaging exper
 | **Property Listing View** | Displays a list/grid of properties based on search or location filters                           | Search bar, filter controls, property cards, price per night, preview image, short description  |
 | **Listing Detailed View** | Shows in-depth information about a selected property                                             | Image carousel, full description, amenities list, reviews, map, host info, booking calendar     |
 | **Simple Checkout View**  | Final step in the booking flow to review and confirm reservation                                 | Summary of dates, guests, pricing breakdown, payment form, cancellation policy, confirm button  |
-
+|Search Functionality| A robust feature where users can search properties based on criteria such as location, price and availability
 ---
 
 ## ✅ Why a User-Friendly Design Matters
