@@ -186,6 +186,7 @@ Represents a reservation made by a user for a property.
 - `end_Date`
 - `total_Price`
 - status (e.g confirmed, cancelled, pending)
+- created_at
 
 ### Relationships:
 - A booking is made by **one user**.
@@ -231,6 +232,7 @@ Represents a payment transaction for a booking.
 - sender_id (Foreign key to user)
 - receiver_id (Foreign key to user)
 -  message_body
+-  created_at
 
   ## Relationships
   - A user can receive a message (one-to-one)
