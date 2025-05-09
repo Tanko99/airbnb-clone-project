@@ -105,8 +105,8 @@ Make decisions on scope and accept completed work.
 ---
 
 ## Scrum Master 🏅
-##Overview: The Scrum Master facilitates Agile processes and helps the team follow Scrum practices.
-##Key Responsibilities:
+## Overview: The Scrum Master facilitates Agile processes and helps the team follow Scrum practices.
+## Key Responsibilities:
 Organize and facilitate Scrum ceremonies (e.g., daily stand-ups, sprint planning, retrospectives).
 Remove impediments that hinder the team’s progress.
 Foster a collaborative and productive team environment.
@@ -140,10 +140,13 @@ Ensure continuous improvement within the team.
 
 ### Key Fields:
 - `id` (Primary Key)
-- `name`
+- `first_name`
+- 'last_name'
 - `email` (Unique)
 - `passwordHash`
 - `role` (e.g., guest, host)
+- 'phone_number'
+- 'created_at'
 
 ### Relationships:
 - A user can create **multiple properties** (if they are a host).
@@ -157,11 +160,13 @@ Represents a listing available for booking.
 
 ### Key Fields:
 - `id` (Primary Key)
+- 'host_id' (Foreign key)
 - `title`
 - `description`
 - `location`
-- `pricePerNight`
-- `hostId` (Foreign Key → User)
+- `price_Per_Night`
+- `created_at'
+- 'updated_at'
 
 ### Relationships:
 - A property is **owned by one user** (host).
@@ -177,9 +182,10 @@ Represents a reservation made by a user for a property.
 - `id` (Primary Key)
 - `userId` (Foreign Key → User)
 - `propertyId` (Foreign Key → Property)
-- `startDate`
-- `endDate`
-- `totalPrice`
+- `start_Date`
+- `end_Date`
+- `total_Price`
+- 'status'
 
 ### Relationships:
 - A booking is made by **one user**.
@@ -212,13 +218,23 @@ Represents a payment transaction for a booking.
 - `id` (Primary Key)
 - `bookingId` (Foreign Key → Booking)
 - `amount`
-- `status` (e.g., paid, pending, failed)
+- `payment_date` 
 - `paymentMethod` (e.g., card, PayPal, MTN momo, Orange money or any other payment method)
 
 ### Relationships:
 - A payment is linked to **one booking**.
 - A booking has **one payment** (one-to-one).
 
+## Messages
+## Key Fields:
+- 'message_id' (Primary key)
+-  'sender_id' (Foreign key to user)
+-  'receiver_id' (Foreign key to user)
+-  'message_body'
+
+  ## Relationships
+  - A user can receive a message (one-to-one)
+  - A user can send a message(one-to-one)
 ---
 ## Feature Breakdown
 This project includes the following features;
