@@ -180,8 +180,8 @@ Represents a reservation made by a user for a property.
 
 ### Key Fields:
 - `booking_id` (Primary Key)
-- `userId` (Foreign Key → User)
-- `propertyId` (Foreign Key → Property)
+- `user_id` (Foreign Key → User)
+- `property_id` (Foreign Key → Property)
 - `start_Date`
 - `end_Date`
 - `total_Price`
@@ -199,8 +199,8 @@ Represents feedback given by a user for a property.
 
 ### Key Fields:
 - `review_id` (Primary Key)
-- `userId` (Foreign Key → User)
-- `propertyId` (Foreign Key → Property)
+- `user_id` (Foreign Key → User)
+- `property_id` (Foreign Key → Property)
 - `rating` (e.g., 1–5)
 - `comment`
 
@@ -216,7 +216,7 @@ Represents a payment transaction for a booking.
 
 ### Key Fields:
 - `payment_id` (Primary Key)
-- `bookingId` (Foreign Key → Booking)
+- `booking_id` (Foreign Key → Booking)
 - `amount`
 - `payment_date` 
 - `paymentMethod` (e.g., card, PayPal, MTN momo, Orange money or any other payment method)
