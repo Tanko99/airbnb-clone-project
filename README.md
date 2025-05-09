@@ -139,14 +139,14 @@ Ensure continuous improvement within the team.
  This represents someone who can host or book properties.
 
 ### Key Fields:
-- `id` (Primary Key)
+- `user_id` (Primary Key)
 - `first_name`
 - 'last_name'
 - `email` (Unique)
 - `passwordHash`
 - `role` (e.g., guest, host)
-- 'phone_number'
-- 'created_at'
+- phone_number
+- created_at
 
 ### Relationships:
 - A user can create **multiple properties** (if they are a host).
@@ -159,14 +159,14 @@ Ensure continuous improvement within the team.
 Represents a listing available for booking.
 
 ### Key Fields:
-- `id` (Primary Key)
-- 'host_id' (Foreign key)
+- `property_id` (Primary Key)
+- host_id (Foreign key)
 - `title`
 - `description`
 - `location`
 - `price_Per_Night`
-- `created_at'
-- 'updated_at'
+- created_at
+- updated_at
 
 ### Relationships:
 - A property is **owned by one user** (host).
@@ -179,13 +179,13 @@ Represents a listing available for booking.
 Represents a reservation made by a user for a property.
 
 ### Key Fields:
-- `id` (Primary Key)
+- `booking_id` (Primary Key)
 - `userId` (Foreign Key → User)
 - `propertyId` (Foreign Key → Property)
 - `start_Date`
 - `end_Date`
 - `total_Price`
-- 'status'
+- status (e.g confirmed, cancelled, pending)
 
 ### Relationships:
 - A booking is made by **one user**.
@@ -198,7 +198,7 @@ Represents a reservation made by a user for a property.
 Represents feedback given by a user for a property.
 
 ### Key Fields:
-- `id` (Primary Key)
+- `review_id` (Primary Key)
 - `userId` (Foreign Key → User)
 - `propertyId` (Foreign Key → Property)
 - `rating` (e.g., 1–5)
@@ -215,7 +215,7 @@ Represents feedback given by a user for a property.
 Represents a payment transaction for a booking.
 
 ### Key Fields:
-- `id` (Primary Key)
+- `payment_id` (Primary Key)
 - `bookingId` (Foreign Key → Booking)
 - `amount`
 - `payment_date` 
@@ -227,10 +227,10 @@ Represents a payment transaction for a booking.
 
 ## Messages
 ## Key Fields:
-- 'message_id' (Primary key)
--  'sender_id' (Foreign key to user)
--  'receiver_id' (Foreign key to user)
--  'message_body'
+- message_id (Primary key)
+- sender_id (Foreign key to user)
+- receiver_id (Foreign key to user)
+-  message_body
 
   ## Relationships
   - A user can receive a message (one-to-one)
@@ -575,9 +575,6 @@ The footer will provide additional navigation and brand-related links.
 - Social media icons (optional)
 - Copyright notice
 
-**Design Notes**:
-- Muted color tone to separate from content
-- Mobile-friendly column layout
 
 ---
 
